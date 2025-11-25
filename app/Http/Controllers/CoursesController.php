@@ -38,9 +38,10 @@ class CoursesController extends Controller
             'duration_weeks' => 6,
         ];
 
-        $seatsCount = 2; // untuk contoh trans_choice
+        $seatsCount = 6;
+        $joinsCount = 38; // untuk contoh trans_choice
         $studentName = 'Anderies';
 
-        return view('courses.index', compact('course', 'seatsCount', 'studentName'));
+        return view('courses.index', compact('course', 'seatsCount', 'studentName', 'joinsCount'));
     }
 }

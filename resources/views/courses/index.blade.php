@@ -34,7 +34,11 @@
 
     <p>{{ __('courses.welcome', ['name' => $studentName]) }}</p>
 
-    <p><button>{{ __('Enroll now') }}</button> {{-- JSON translation example --}}</p>
+    <p>{{ trans_choice('courses.joins', $seatsCount, ['count' => $joinsCount]) }}</p>
+
+    <button>
+        {{ __('Enroll now') }}
+    </button>
 </body>
 
 </html>
